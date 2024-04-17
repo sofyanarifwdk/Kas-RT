@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemAvatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="148dp"
+        android:contentDescription="Avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/itemName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#7E7E7E"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@id/itemAvatar"
+        app:layout_constraintTop_toTopOf="@id/itemAvatar"
+        tools:text="Name" />
+
+    <TextView
+        android:id="@+id/itemEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemName"
+        app:layout_constraintTop_toBottomOf="@+id/itemName"
+        tools:text="Email" />
+
+    <TextView
+        android:id="@+id/itemAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemEmail"
+        app:layout_constraintTop_toBottomOf="@+id/itemEmail"
+        tools:text="Alamat" />
+
+    <TextView
+        android:id="@+id/itemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Total Iuran Warga"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/itemAlamat"
+       />
+
+    <TextView
+        android:id="@+id/itemText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Iuran Individu"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemText"
+        app:layout_constraintTop_toBottomOf="@+id/itemText"
+        />
+
+    <TextView
+        android:id="@+id/itemText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Total Akhir Bln"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemText2"
+        app:layout_constraintTop_toBottomOf="@+id/itemText2"
+        />
+
+    <TextView
+        android:id="@+id/itemText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Pengeluaran"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemText3"
+        app:layout_constraintTop_toBottomOf="@+id/itemText3"
+        />
+
+    <TextView
+        android:id="@+id/itemText5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Catatan"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemText4"
+        app:layout_constraintTop_toBottomOf="@+id/itemText4"
+        />
+
+    <TextView
+        android:id="@+id/itemIuranbln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemAlamat"
+        app:layout_constraintTop_toBottomOf="@+id/itemAlamat"
+        tools:text="Iuran Warga" />
+
+    <TextView
+        android:id="@+id/itemTotalIuran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemIuranbln"
+        app:layout_constraintTop_toBottomOf="@+id/itemIuranbln"
+        tools:text="Total Iuran Individu Warga" />
+
+    <TextView
+        android:id="@+id/itemTotalAkhir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemTotalIuran"
+        app:layout_constraintTop_toBottomOf="@+id/itemTotalIuran"
+        tools:text="Total Akhir Bulan" />
+
+    <TextView
+        android:id="@+id/itemPengeluaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemTotalAkhir"
+        app:layout_constraintTop_toBottomOf="@+id/itemTotalAkhir"
+        tools:text="Pengeluaran" />
+
+    <TextView
+        android:id="@+id/itemRemark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#7E7E7E"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/itemPengeluaran"
+        app:layout_constraintTop_toBottomOf="@+id/itemPengeluaran"
+        tools:text="Catatan" />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemRemark"
+        />
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemAlamat" />
+</androidx.constraintlayout.widget.ConstraintLayout>
